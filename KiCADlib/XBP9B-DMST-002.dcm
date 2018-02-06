@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XBP9B-DMST-002
+D MODULE XBEE PRO S3B 900HP RPSMA
+K
+F http://www.digi.com/pdf/ds_xbeepro900hp.pdf
+$ENDCMP
+#
+#End Doc Library

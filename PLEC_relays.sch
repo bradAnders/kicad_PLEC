@@ -1,0 +1,520 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:teensy
+LIBS:XBP9B-DMST-002
+LIBS:PLEC
+LIBS:cap_470u
+LIBS:PLEC-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TLP222A U4
+U 1 1 5A747309
+P 2800 3450
+F 0 "U4" H 2600 3650 50  0000 L CNN
+F 1 "TLP222A" H 2800 3650 50  0000 L CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 2600 3250 50  0001 L CIN
+F 3 "" H 2750 3450 50  0001 L CNN
+	1    2800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP222A-2 U3
+U 1 1 5A747382
+P 2800 1000
+F 0 "U3" H 2600 1200 50  0000 L CNN
+F 1 "TLP222A-2" H 2800 1200 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 2600 800 50  0001 L CIN
+F 3 "" H 2750 1000 50  0001 L CNN
+	1    2800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP222A-2 U3
+U 2 1 5A747438
+P 2800 1550
+F 0 "U3" H 2600 1750 50  0000 L CNN
+F 1 "TLP222A-2" H 2800 1750 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 2600 1350 50  0001 L CIN
+F 3 "" H 2750 1550 50  0001 L CNN
+	2    2800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L IM00 K3
+U 1 1 5A7476D4
+P 4050 2250
+F 0 "K3" H 4900 2400 50  0000 L CNN
+F 1 "PB1167" H 4900 2300 50  0000 L CNN
+F 2 "PLEC:PB1167" H 4050 2250 50  0001 C CNN
+F 3 "" H 4050 2250 50  0001 C CNN
+	1    4050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L IM00 K2
+U 1 1 5A74779C
+P 3950 3950
+F 0 "K2" H 4800 4100 50  0000 L CNN
+F 1 "PB1167" H 4800 4000 50  0000 L CNN
+F 2 "PLEC:PB1167" H 3950 3950 50  0001 C CNN
+F 3 "" H 3950 3950 50  0001 C CNN
+	1    3950 3950
+	1    0    0    -1  
+$EndComp
+Text HLabel 3100 900  2    60   Input ~ 0
+VDD
+Text HLabel 3100 1450 2    60   Input ~ 0
+VDD
+Wire Wire Line
+	3100 1100 6050 1100
+Wire Wire Line
+	4150 1100 4150 1950
+Wire Wire Line
+	4250 2550 4250 2650
+Wire Wire Line
+	4250 2650 5300 2650
+Connection ~ 4150 1100
+Wire Wire Line
+	3100 1650 5400 1650
+Wire Wire Line
+	4550 1650 4550 1950
+Wire Wire Line
+	4650 2550 4650 2750
+Connection ~ 4550 1650
+Wire Wire Line
+	5400 1650 5400 2350
+Wire Wire Line
+	5400 2350 6050 2350
+Wire Wire Line
+	4650 2750 6050 2750
+Wire Wire Line
+	5300 2650 5300 1500
+Wire Wire Line
+	5300 1500 6050 1500
+$Comp
+L TLP222A-2 U5
+U 1 1 5A7487AB
+P 2800 5400
+F 0 "U5" H 2600 5600 50  0000 L CNN
+F 1 "TLP222A-2" H 2800 5600 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 2600 5200 50  0001 L CIN
+F 3 "" H 2750 5400 50  0001 L CNN
+	1    2800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP222A-2 U5
+U 2 1 5A7487B1
+P 2800 5950
+F 0 "U5" H 2600 6150 50  0000 L CNN
+F 1 "TLP222A-2" H 2800 6150 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 2600 5750 50  0001 L CIN
+F 3 "" H 2750 5950 50  0001 L CNN
+	2    2800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L IM00 K4
+U 1 1 5A7487B7
+P 4050 6650
+F 0 "K4" H 4900 6800 50  0000 L CNN
+F 1 "PB1167" H 4900 6700 50  0000 L CNN
+F 2 "PLEC:PB1167" H 4050 6650 50  0001 C CNN
+F 3 "" H 4050 6650 50  0001 C CNN
+	1    4050 6650
+	1    0    0    -1  
+$EndComp
+Text HLabel 3100 5300 2    60   Input ~ 0
+VDD
+Text HLabel 3100 5850 2    60   Input ~ 0
+VDD
+Wire Wire Line
+	3100 5500 6050 5500
+Wire Wire Line
+	4150 5500 4150 6350
+Wire Wire Line
+	4250 6950 4250 7050
+Wire Wire Line
+	4250 7050 5300 7050
+Connection ~ 4150 5500
+Wire Wire Line
+	3100 6050 5400 6050
+Wire Wire Line
+	4550 6050 4550 6350
+Wire Wire Line
+	4650 6950 4650 7150
+Connection ~ 4550 6050
+Wire Wire Line
+	5400 6050 5400 6750
+Wire Wire Line
+	5400 6750 6050 6750
+Wire Wire Line
+	4650 7150 6050 7150
+Wire Wire Line
+	5300 7050 5300 5900
+Wire Wire Line
+	5300 5900 6050 5900
+Wire Wire Line
+	4550 4250 4550 4350
+Wire Wire Line
+	4550 4350 6050 4350
+Wire Wire Line
+	4150 4250 4150 4750
+Wire Wire Line
+	4150 4750 6050 4750
+Text HLabel 3100 3350 2    60   Input ~ 0
+VDD
+Wire Wire Line
+	4250 3650 4250 3550
+Wire Wire Line
+	4250 3550 3100 3550
+Wire Wire Line
+	4450 3650 4450 3350
+Wire Wire Line
+	4450 3350 5300 3350
+Wire Wire Line
+	5300 3350 5300 4750
+Connection ~ 5300 4750
+Wire Wire Line
+	4050 3650 4050 3250
+Wire Wire Line
+	4050 3250 5400 3250
+Wire Wire Line
+	5400 3250 5400 4350
+Connection ~ 5400 4350
+Text HLabel 2500 1100 0    60   Output ~ 0
+VSS
+Text HLabel 2500 900  0    60   Input ~ 0
+R1D_IN
+Text HLabel 2500 1450 0    60   Input ~ 0
+R2D_IN
+Text HLabel 2500 3350 0    60   Input ~ 0
+R3D_IN
+Text HLabel 2500 5300 0    60   Input ~ 0
+R4D_IN
+Text HLabel 2500 5850 0    60   Input ~ 0
+R5D_IN
+Text HLabel 3850 1950 0    60   Input ~ 0
+R12S_IN
+Text HLabel 3750 3650 0    60   Input ~ 0
+R3S_IN
+Text HLabel 3850 6350 0    60   Input ~ 0
+R45S_IN
+Text HLabel 2500 1650 0    60   Output ~ 0
+VSS
+Text HLabel 2500 3550 0    60   Output ~ 0
+VSS
+Text HLabel 2500 5500 0    60   Output ~ 0
+VSS
+Text HLabel 2500 6050 0    60   Output ~ 0
+VSS
+Text HLabel 6050 1100 2    60   Output ~ 0
+R1D_OUT
+Text HLabel 6050 1500 2    60   Output ~ 0
+R1S_OUT
+Text HLabel 6050 2350 2    60   Output ~ 0
+R2D_OUT
+Text HLabel 6050 2750 2    60   Output ~ 0
+R2S_OUT
+Text HLabel 6050 4350 2    60   Output ~ 0
+R3D_OUT
+Text HLabel 6050 4750 2    60   Output ~ 0
+R3S_OUT
+Text HLabel 6050 5500 2    60   Output ~ 0
+R4D_OUT
+Text HLabel 6050 5900 2    60   Output ~ 0
+R4S_OUT
+Text HLabel 6050 6750 2    60   Output ~ 0
+R5D_OUT
+Text HLabel 6050 7150 2    60   Output ~ 0
+R5S_OUT
+Text HLabel 3850 2550 3    60   Output ~ 0
+VSS
+Text HLabel 3750 4250 3    60   Output ~ 0
+VSS
+Text HLabel 3850 6950 3    60   Output ~ 0
+VSS
+$Comp
+L R R29
+U 1 1 5A74E273
+P 5500 1300
+F 0 "R29" V 5580 1300 50  0000 C CNN
+F 1 "100K" V 5500 1300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5430 1300 50  0001 C CNN
+F 3 "" H 5500 1300 50  0001 C CNN
+	1    5500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R30
+U 1 1 5A74E434
+P 5500 2550
+F 0 "R30" V 5580 2550 50  0000 C CNN
+F 1 "100K" V 5500 2550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5430 2550 50  0001 C CNN
+F 3 "" H 5500 2550 50  0001 C CNN
+	1    5500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1150 5500 1100
+Connection ~ 5500 1100
+Wire Wire Line
+	5500 1450 5500 1500
+Connection ~ 5500 1500
+Wire Wire Line
+	5500 2400 5500 2350
+Connection ~ 5500 2350
+Wire Wire Line
+	5500 2700 5500 2750
+Connection ~ 5500 2750
+$Comp
+L R R33
+U 1 1 5A74E6F3
+P 5500 6950
+F 0 "R33" V 5580 6950 50  0000 C CNN
+F 1 "100K" V 5500 6950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5430 6950 50  0001 C CNN
+F 3 "" H 5500 6950 50  0001 C CNN
+	1    5500 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6800 5500 6750
+Wire Wire Line
+	5500 7100 5500 7150
+$Comp
+L C C15
+U 1 1 5A74E708
+P 5750 1300
+F 0 "C15" H 5775 1400 50  0000 L CNN
+F 1 "4700p" H 5775 1200 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 5788 1150 50  0001 C CNN
+F 3 "" H 5750 1300 50  0001 C CNN
+	1    5750 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1150 5750 1100
+Connection ~ 5750 1100
+Wire Wire Line
+	5750 1450 5750 1500
+Connection ~ 5750 1500
+$Comp
+L C C19
+U 1 1 5A74E84A
+P 5750 6950
+F 0 "C19" H 5775 7050 50  0000 L CNN
+F 1 "4700p" H 5775 6850 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 5788 6800 50  0001 C CNN
+F 3 "" H 5750 6950 50  0001 C CNN
+	1    5750 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6800 5750 6750
+Wire Wire Line
+	5750 7100 5750 7150
+$Comp
+L C C16
+U 1 1 5A74EB29
+P 5750 2550
+F 0 "C16" H 5775 2650 50  0000 L CNN
+F 1 "4700p" H 5775 2450 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 5788 2400 50  0001 C CNN
+F 3 "" H 5750 2550 50  0001 C CNN
+	1    5750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R31
+U 1 1 5A74EC6B
+P 5500 4550
+F 0 "R31" V 5580 4550 50  0000 C CNN
+F 1 "100K" V 5500 4550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5430 4550 50  0001 C CNN
+F 3 "" H 5500 4550 50  0001 C CNN
+	1    5500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4400 5500 4350
+Wire Wire Line
+	5500 4700 5500 4750
+$Comp
+L C C17
+U 1 1 5A74EC73
+P 5750 4550
+F 0 "C17" H 5775 4650 50  0000 L CNN
+F 1 "4700p" H 5775 4450 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 5788 4400 50  0001 C CNN
+F 3 "" H 5750 4550 50  0001 C CNN
+	1    5750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4400 5750 4350
+Wire Wire Line
+	5750 4700 5750 4750
+Connection ~ 5500 6750
+Connection ~ 5750 6750
+Connection ~ 5750 7150
+Connection ~ 5500 7150
+Connection ~ 5500 4350
+Connection ~ 5750 4350
+Connection ~ 5750 4750
+Connection ~ 5500 4750
+$Comp
+L R R32
+U 1 1 5A74ED9D
+P 5500 5700
+F 0 "R32" V 5580 5700 50  0000 C CNN
+F 1 "100K" V 5500 5700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5430 5700 50  0001 C CNN
+F 3 "" H 5500 5700 50  0001 C CNN
+	1    5500 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5550 5500 5500
+Wire Wire Line
+	5500 5850 5500 5900
+$Comp
+L C C18
+U 1 1 5A74EDA5
+P 5750 5700
+F 0 "C18" H 5775 5800 50  0000 L CNN
+F 1 "4700p" H 5775 5600 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 5788 5550 50  0001 C CNN
+F 3 "" H 5750 5700 50  0001 C CNN
+	1    5750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5550 5750 5500
+Wire Wire Line
+	5750 5850 5750 5900
+Connection ~ 5500 5500
+Connection ~ 5750 5500
+Connection ~ 5750 5900
+Connection ~ 5500 5900
+Text HLabel 1600 2200 0    60   Input ~ 0
+VDD
+$Comp
+L C C12
+U 1 1 5A770528
+P 1800 2450
+F 0 "C12" H 1825 2550 50  0000 L CNN
+F 1 "470u" H 1825 2350 50  0000 L CNN
+F 2 "PLEC:THTm_5Px8Dx22H__470u" H 1838 2300 50  0001 C CNN
+F 3 "" H 1800 2450 50  0001 C CNN
+	1    1800 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1600 2700 0    60   Output ~ 0
+VSS
+$Comp
+L C C14
+U 1 1 5A7707AC
+P 2500 2450
+F 0 "C14" H 2525 2550 50  0000 L CNN
+F 1 "4.7u" H 2525 2350 50  0000 L CNN
+F 2 "PLEC:THTm_1.5Px4Dx7H_4.7u" H 2538 2300 50  0001 C CNN
+F 3 "" H 2500 2450 50  0001 C CNN
+	1    2500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2700 2500 2700
+Wire Wire Line
+	1800 2300 1800 2200
+Connection ~ 1800 2200
+Wire Wire Line
+	2150 2200 2150 2300
+Connection ~ 2150 2200
+Wire Wire Line
+	1800 2600 1800 2700
+Connection ~ 1800 2700
+Wire Wire Line
+	2150 2600 2150 2700
+Connection ~ 2150 2700
+Wire Wire Line
+	5750 2400 5750 2350
+Connection ~ 5750 2350
+Wire Wire Line
+	5750 2700 5750 2750
+Connection ~ 5750 2750
+Wire Wire Line
+	2500 2200 2500 2300
+Connection ~ 2500 2200
+Wire Wire Line
+	2500 2700 2500 2600
+Connection ~ 2500 2700
+$Comp
+L C C13
+U 1 1 5A75F71C
+P 2150 2450
+F 0 "C13" H 2175 2550 50  0000 L CNN
+F 1 "47u" H 2175 2350 50  0000 L CNN
+F 2 "PLEC:THTm_2Px4Dx12H_47u" H 2188 2300 50  0001 C CNN
+F 3 "" H 2150 2450 50  0001 C CNN
+	1    2150 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 4750 6350 1    60   Output ~ 0
+GND_SENSED
+Text HLabel 4350 6350 1    60   Output ~ 0
+GND_SENSED
+Text HLabel 4650 3650 1    60   Output ~ 0
+GND_SENSED
+Text HLabel 4750 1950 1    60   Output ~ 0
+GND_SENSED
+Text HLabel 4350 1950 1    60   Output ~ 0
+GND_SENSED
+Wire Wire Line
+	1600 2200 2500 2200
+$EndSCHEMATC
