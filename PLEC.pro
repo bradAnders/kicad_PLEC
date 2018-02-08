@@ -1,4 +1,4 @@
-update=2/7/2018 11:40:10 PM
+update=2/8/2018 11:40:37 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,13 @@ LibName35=KiCADlib/PLEC
 LibName36=KiCADlib/cap_470u
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

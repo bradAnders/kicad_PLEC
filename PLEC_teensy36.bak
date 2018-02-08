@@ -94,13 +94,13 @@ Text HLabel 4650 4200 0    60   Input ~ 0
 A8
 Text HLabel 4650 4100 0    60   Input ~ 0
 A9
-Text HLabel 4600 6100 0    60   Input ~ 0
+Text HLabel 4650 6100 0    60   Input ~ 0
 A10
 Text HLabel 6650 6100 2    60   Input ~ 0
 A11
-Text HLabel 4600 5900 0    60   Input ~ 0
+Text HLabel 4650 5900 0    60   Input ~ 0
 A12
-Text HLabel 4600 6000 0    60   Input ~ 0
+Text HLabel 4650 6000 0    60   Input ~ 0
 A13
 Text HLabel 4650 2300 0    60   Output ~ 0
 D0
