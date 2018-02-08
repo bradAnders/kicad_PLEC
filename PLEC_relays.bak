@@ -517,4 +517,6 @@ Text HLabel 4350 1950 1    60   Output ~ 0
 GND_SENSED
 Wire Wire Line
 	1600 2200 2500 2200
+Text Label 3300 3550 0    60   ~ 0
+R3D_SUPPLY
 $EndSCHEMATC

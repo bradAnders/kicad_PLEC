@@ -1,4 +1,4 @@
-update=2/2/2018 7:51:00 PM
+update=2/7/2018 11:40:10 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=D:/Dropbox/School/USLI/KiCADlib
@@ -65,3 +63,5 @@ LibName33=KiCADlib/teensy
 LibName34=KiCADlib/XBP9B-DMST-002
 LibName35=KiCADlib/PLEC
 LibName36=KiCADlib/cap_470u
+[general]
+version=1

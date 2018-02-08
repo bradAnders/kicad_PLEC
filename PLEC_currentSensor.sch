@@ -189,4 +189,10 @@ VEE
 Wire Wire Line
 	4350 5000 4350 4900
 Connection ~ 4350 4900
+Text Label 4700 3950 2    60   ~ 0
+COIL1
+Text Label 4700 4250 2    60   ~ 0
+COIL2
+Text Label 4700 4550 2    60   ~ 0
+COIL3
 $EndSCHEMATC

@@ -345,4 +345,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 3050 4650 2950
 Connection ~ 4650 2950
+Text Label 5700 2950 0    60   ~ 0
+V9_DIODE
 $EndSCHEMATC
