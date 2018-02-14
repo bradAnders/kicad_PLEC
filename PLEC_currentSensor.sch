@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:PLEC-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -35,12 +36,13 @@ LIBS:teensy
 LIBS:XBP9B-DMST-002
 LIBS:PLEC
 LIBS:cap_470u
+LIBS:BDW42G
 LIBS:PLEC-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -195,4 +197,6 @@ Text Label 4700 4250 2    60   ~ 0
 COIL2
 Text Label 4700 4550 2    60   ~ 0
 COIL3
+Text Notes 6150 4200 0    60   ~ 0
+With all four coils in series, sensor rated to 5A\nInput range: -5A - +5A\nLinear output: 0.625V - 4.375V
 $EndSCHEMATC

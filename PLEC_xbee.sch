@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:PLEC-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -35,12 +36,13 @@ LIBS:teensy
 LIBS:XBP9B-DMST-002
 LIBS:PLEC
 LIBS:cap_470u
+LIBS:BDW42G
 LIBS:PLEC-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -116,12 +118,6 @@ Text HLabel 5650 3900 2    60   Output ~ 0
 ~SPI_INT~_~UART_INT
 NoConn ~ 4850 3700
 NoConn ~ 4850 3600
-Text HLabel 4400 4000 0    60   Output ~ 0
-VEE
-Text HLabel 5650 3400 2    60   Output ~ 0
-VEE
-Text HLabel 4400 2750 3    60   Output ~ 0
-VEE
 Wire Wire Line
 	4400 2350 4400 2250
 Connection ~ 4400 2250
@@ -138,11 +134,59 @@ F 3 "" H 4050 2500 50  0001 C CNN
 	1    4050 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 4050 2750 3    60   Output ~ 0
-VEE
 Wire Wire Line
 	4050 2750 4050 2650
 Wire Wire Line
 	4050 2350 4050 2250
 Connection ~ 4050 2250
+Wire Wire Line
+	4400 4100 4400 4000
+$Comp
+L GND #PWR028
+U 1 1 5A8488B5
+P 4400 4100
+F 0 "#PWR028" H 4400 3850 50  0001 C CNN
+F 1 "GND" H 4400 3950 50  0000 C CNN
+F 2 "" H 4400 4100 50  0001 C CNN
+F 3 "" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3400 6800 3400
+Wire Wire Line
+	6800 3400 6800 3500
+$Comp
+L GND #PWR029
+U 1 1 5A848C7E
+P 6800 3500
+F 0 "#PWR029" H 6800 3250 50  0001 C CNN
+F 1 "GND" H 6800 3350 50  0000 C CNN
+F 2 "" H 6800 3500 50  0001 C CNN
+F 3 "" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5A8494C9
+P 4050 2750
+F 0 "#PWR030" H 4050 2500 50  0001 C CNN
+F 1 "GND" H 4050 2600 50  0000 C CNN
+F 2 "" H 4050 2750 50  0001 C CNN
+F 3 "" H 4050 2750 50  0001 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 5A8494DD
+P 4400 2750
+F 0 "#PWR031" H 4400 2500 50  0001 C CNN
+F 1 "GND" H 4400 2600 50  0000 C CNN
+F 2 "" H 4400 2750 50  0001 C CNN
+F 3 "" H 4400 2750 50  0001 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

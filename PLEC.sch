@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:PLEC-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -35,6 +36,7 @@ LIBS:teensy
 LIBS:XBP9B-DMST-002
 LIBS:PLEC
 LIBS:cap_470u
+LIBS:BDW42G
 LIBS:PLEC-cache
 EELAYER 25 0
 EELAYER END
@@ -51,476 +53,245 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1600 4900 1050 1500
+S 3350 4050 1050 1500
 U 5A71515B
 F0 "Voltage Dividers" 60
 F1 "PLEC_dividers.sch" 60
-F2 "IN1" I L 1600 5100 60 
-F3 "IN2" I L 1600 5200 60 
-F4 "IN3" I L 1600 5300 60 
-F5 "IN4" I L 1600 5400 60 
-F6 "IN5" I L 1600 5500 60 
-F7 "IN6" I L 1600 5600 60 
-F8 "IN7" I L 1600 5700 60 
-F9 "IN8" I L 1600 5800 60 
-F10 "IN9" I L 1600 5900 60 
-F11 "IN0" I L 1600 5000 60 
-F12 "OUT0" O R 2650 5000 60 
-F13 "OUT1" O R 2650 5100 60 
-F14 "OUT2" O R 2650 5200 60 
-F15 "OUT3" O R 2650 5300 60 
-F16 "OUT4" O R 2650 5400 60 
-F17 "OUT5" O R 2650 5500 60 
-F18 "OUT6" O R 2650 5600 60 
-F19 "OUT7" O R 2650 5700 60 
-F20 "OUT8" O R 2650 5800 60 
-F21 "OUT9" O R 2650 5900 60 
-F22 "VEE" O L 1600 6300 60 
-F23 "INA" I L 1600 6050 60 
-F24 "OUTA" O R 2650 6050 60 
-F25 "INB" I L 1600 6150 60 
-F26 "OUTB" O R 2650 6150 60 
+F2 "IN1" I L 3350 4250 60 
+F3 "IN2" I L 3350 4350 60 
+F4 "IN3" I L 3350 4450 60 
+F5 "IN4" I L 3350 4550 60 
+F6 "IN5" I L 3350 4650 60 
+F7 "IN6" I L 3350 4750 60 
+F8 "IN7" I L 3350 4850 60 
+F9 "IN8" I L 3350 4950 60 
+F10 "IN9" I L 3350 5050 60 
+F11 "IN0" I L 3350 4150 60 
+F12 "OUT0" O R 4400 4150 60 
+F13 "OUT1" O R 4400 4250 60 
+F14 "OUT2" O R 4400 4350 60 
+F15 "OUT3" O R 4400 4450 60 
+F16 "OUT4" O R 4400 4550 60 
+F17 "OUT5" O R 4400 4650 60 
+F18 "OUT6" O R 4400 4750 60 
+F19 "OUT7" O R 4400 4850 60 
+F20 "OUT8" O R 4400 4950 60 
+F21 "OUT9" O R 4400 5050 60 
+F22 "INA" I L 3350 5200 60 
+F23 "OUTA" O R 4400 5300 60 
+F24 "INB" I L 3350 5300 60 
+F25 "OUTB" O R 4400 5400 60 
 $EndSheet
 $Sheet
-S 1650 1000 1000 500 
+S 1700 1000 1000 500 
 U 5A71AC48
 F0 "Power Rails" 60
 F1 "PLEC_power.sch" 60
-F2 "VCC_9" I L 1650 1100 60 
-F3 "VCC_5" O R 2650 1250 60 
-F4 "VEE" O L 1650 1200 60 
-F5 "VCC_9_OL" O R 2650 1100 60 
-F6 "VCC_33" O R 2650 1400 60 
+F2 "VCC_5" O R 2700 1250 60 
+F3 "VCC_33" O R 2700 1400 60 
+F4 "VBAT" I L 1700 1100 60 
 $EndSheet
 $Comp
 L Conn_01x02 J1
 U 1 1 5A72CED8
-P 950 1100
-F 0 "J1" H 950 1200 50  0000 C CNN
-F 1 "Conn_01x02" H 950 900 50  0000 C CNN
-F 2 "PLEC:THT_TerminalBlock_2.5mm_2pos" H 950 1100 50  0001 C CNN
-F 3 "" H 950 1100 50  0001 C CNN
-	1    950  1100
+P 1000 1100
+F 0 "J1" H 1000 1200 50  0000 C CNN
+F 1 "Conn_01x02" H 1000 900 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Altech_AK300-2_P5.00mm" H 1000 1100 50  0001 C CNN
+F 3 "" H 1000 1100 50  0001 C CNN
+	1    1000 1100
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x03 J5
 U 1 1 5A72D02D
-P 10900 900
-F 0 "J5" H 10900 1100 50  0000 C CNN
-F 1 "Conn_01x03" H 10900 700 50  0000 C CNN
-F 2 "PLEC:THT_TerminalBlock_2.5mm_3pos" H 10900 900 50  0001 C CNN
-F 3 "" H 10900 900 50  0001 C CNN
-	1    10900 900 
+P 10350 1200
+F 0 "J5" H 10350 1400 50  0000 C CNN
+F 1 "Conn_01x03" H 10350 1000 50  0000 C CNN
+F 2 "PLEC:THT_TerminalBlock_2.5mm_3pos" H 10350 1200 50  0001 C CNN
+F 3 "" H 10350 1200 50  0001 C CNN
+	1    10350 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04 J4
 U 1 1 5A72D162
-P 10850 3850
-F 0 "J4" H 10850 4050 50  0000 C CNN
-F 1 "Conn_01x04" H 10850 3550 50  0000 C CNN
-F 2 "PLEC:THT_TerminalBlock_2.5mm_4pos" H 10850 3850 50  0001 C CNN
-F 3 "" H 10850 3850 50  0001 C CNN
-	1    10850 3850
+P 9200 3750
+F 0 "J4" H 9200 3950 50  0000 C CNN
+F 1 "Conn_01x04" H 9200 3450 50  0000 C CNN
+F 2 "PLEC:THT_TerminalBlock_2.5mm_4pos" H 9200 3750 50  0001 C CNN
+F 3 "" H 9200 3750 50  0001 C CNN
+	1    9200 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x06 J3
 U 1 1 5A72D6B1
-P 10850 3000
-F 0 "J3" H 10850 3300 50  0000 C CNN
-F 1 "Conn_01x06" H 10850 2600 50  0000 C CNN
-F 2 "PLEC:THT_TerminalBlock_2.5mm_6pos" H 10850 3000 50  0001 C CNN
-F 3 "" H 10850 3000 50  0001 C CNN
-	1    10850 3000
+P 9200 3000
+F 0 "J3" H 9200 3300 50  0000 C CNN
+F 1 "Conn_01x06" H 9200 2600 50  0000 C CNN
+F 2 "PLEC:THT_TerminalBlock_2.5mm_6pos" H 9200 3000 50  0001 C CNN
+F 3 "" H 9200 3000 50  0001 C CNN
+	1    9200 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 2650 1250 2    60   Output ~ 0
-V_5
-Text GLabel 2650 1400 2    60   Output ~ 0
-V_33
-Text GLabel 1100 2200 0    60   Input ~ 0
-V_33
-Text GLabel 2650 1100 2    60   Output ~ 0
-V_9
-Text GLabel 7800 800  0    60   Input ~ 0
-V_9
-Text GLabel 10650 2800 0    60   Input ~ 0
+Text GLabel 9350 2800 2    60   Output ~ 0
 EM_R1+
-Text GLabel 10650 2900 0    60   Input ~ 0
+Text GLabel 9350 2900 2    60   Output ~ 0
 EM_R1-
-Text GLabel 10650 3000 0    60   Input ~ 0
+Text GLabel 9350 3000 2    60   Output ~ 0
 EM_R2+
-Text GLabel 10650 3100 0    60   Input ~ 0
+Text GLabel 9350 3100 2    60   Output ~ 0
 EM_R2-
-Text GLabel 10650 3200 0    60   Input ~ 0
+Text GLabel 9350 3200 2    60   Output ~ 0
 EM_R3+
-Text GLabel 10650 3300 0    60   Input ~ 0
+Text GLabel 9350 3300 2    60   Output ~ 0
 EM_R3-
-Text GLabel 10650 3750 0    60   Input ~ 0
+Text GLabel 9350 3650 2    60   Output ~ 0
 EM_E1+
-Text GLabel 10650 3850 0    60   Input ~ 0
+Text GLabel 9350 3750 2    60   Output ~ 0
 EM_E1-
-Text GLabel 10650 3950 0    60   Input ~ 0
+Text GLabel 9350 3850 2    60   Output ~ 0
 EM_E2+
-Text GLabel 10650 4050 0    60   Input ~ 0
+Text GLabel 9350 3950 2    60   Output ~ 0
 EM_E2-
-Text GLabel 1600 5000 0    60   Input ~ 0
+Text GLabel 3350 4150 0    60   Input ~ 0
 EM_R1+
-Text GLabel 1600 5100 0    60   Input ~ 0
+Text GLabel 3350 4250 0    60   Input ~ 0
 EM_R1-
-Text GLabel 1600 5200 0    60   Input ~ 0
+Text GLabel 3350 4350 0    60   Input ~ 0
 EM_R2+
-Text GLabel 1600 5300 0    60   Input ~ 0
+Text GLabel 3350 4450 0    60   Input ~ 0
 EM_R2-
-Text GLabel 1600 5400 0    60   Input ~ 0
+Text GLabel 3350 4550 0    60   Input ~ 0
 EM_R3+
-Text GLabel 1600 5500 0    60   Input ~ 0
+Text GLabel 3350 4650 0    60   Input ~ 0
 EM_R3-
-Text GLabel 1600 5600 0    60   Input ~ 0
+Text GLabel 3350 4750 0    60   Input ~ 0
 EM_E1+
-Text GLabel 1600 5700 0    60   Input ~ 0
+Text GLabel 3350 4850 0    60   Input ~ 0
 EM_E1-
-Text GLabel 1600 5800 0    60   Input ~ 0
+Text GLabel 3350 4950 0    60   Input ~ 0
 EM_E2+
-Text GLabel 1600 5900 0    60   Input ~ 0
-EM_E2-
-Text GLabel 2650 5000 2    60   Output ~ 0
-EM_R1_VD+
-Text GLabel 2650 5100 2    60   Output ~ 0
-EM_R1_VD-
-Text GLabel 2650 5200 2    60   Output ~ 0
-EM_R2_VD+
-Text GLabel 2650 5300 2    60   Output ~ 0
-EM_R2_VD-
-Text GLabel 2650 5400 2    60   Output ~ 0
-EM_R3_VD+
-Text GLabel 2650 5500 2    60   Output ~ 0
-EM_R3_VD-
-Text GLabel 2650 5600 2    60   Output ~ 0
-EM_E1_VD+
-Text GLabel 2650 5700 2    60   Output ~ 0
-EM_E1_VD-
-Text GLabel 2650 5800 2    60   Output ~ 0
-EM_E2_VD+
-Text GLabel 2650 5900 2    60   Output ~ 0
-EM_E2_VD-
-Text GLabel 2500 2200 2    60   Output ~ 0
-UART_TIXO
-Text GLabel 2500 2400 2    60   Output ~ 0
-UART_~CTS
-Text GLabel 2500 2700 2    60   Output ~ 0
-XB_~INTERRUPT
-Text GLabel 2500 3000 2    60   Output ~ 0
-SPI_MISO
-Text GLabel 2600 3700 2    60   Input ~ 0
-XB_~SLP
-Text GLabel 2600 3550 2    60   Input ~ 0
-XB_~RST
-Text GLabel 2500 3200 2    60   Input ~ 0
-SPI_SS
-Text GLabel 2500 3100 2    60   Input ~ 0
-SPI_MOSI
-Text GLabel 2500 2900 2    60   Input ~ 0
-SPI_CLK
-Text GLabel 2500 2500 2    60   Input ~ 0
-UART_~RTS
-Text GLabel 2500 2300 2    60   Input ~ 0
-UART_TOXI
-$Sheet
-S 8550 2700 1050 1450
-U 5A746317
-F0 "Relays" 60
-F1 "PLEC_relays.sch" 60
-F2 "VDD" I L 8550 2800 60 
-F3 "R1D_IN" I L 8550 2950 60 
-F4 "R2D_IN" I L 8550 3050 60 
-F5 "R3D_IN" I L 8550 3150 60 
-F6 "R4D_IN" I L 8550 3250 60 
-F7 "R5D_IN" I L 8550 3350 60 
-F8 "R12S_IN" I L 8550 3550 60 
-F9 "R3S_IN" I L 8550 3650 60 
-F10 "R45S_IN" I L 8550 3750 60 
-F11 "R1D_OUT" O R 9600 2800 60 
-F12 "R1S_OUT" O R 9600 2900 60 
-F13 "R2D_OUT" O R 9600 3050 60 
-F14 "R2S_OUT" O R 9600 3150 60 
-F15 "R3D_OUT" O R 9600 3300 60 
-F16 "R3S_OUT" O R 9600 3400 60 
-F17 "R4D_OUT" O R 9600 3550 60 
-F18 "R4S_OUT" O R 9600 3650 60 
-F19 "R5D_OUT" O R 9600 3800 60 
-F20 "R5S_OUT" O R 9600 3900 60 
-F21 "VSS" O R 9600 4050 60 
-F22 "GND_SENSED" O L 8550 4050 60 
-$EndSheet
-Text GLabel 9600 2800 2    60   Output ~ 0
-EM_R1+
-Text GLabel 9600 2900 2    60   Output ~ 0
-EM_R1-
-Text GLabel 9600 3050 2    60   Output ~ 0
-EM_R2+
-Text GLabel 9600 3150 2    60   Output ~ 0
-EM_R2-
-Text GLabel 9600 3300 2    60   Output ~ 0
-EM_R3+
-Text GLabel 9600 3400 2    60   Output ~ 0
-EM_R3-
-Text GLabel 9600 3550 2    60   Output ~ 0
-EM_E1+
-Text GLabel 9600 3650 2    60   Output ~ 0
-EM_E1-
-Text GLabel 9600 3800 2    60   Output ~ 0
-EM_E2+
-Text GLabel 9600 3900 2    60   Output ~ 0
+Text GLabel 3350 5050 0    60   Input ~ 0
 EM_E2-
 $Comp
 L GND #PWR01
-U 1 1 5A755B8B
-P 1000 3200
-F 0 "#PWR01" H 1000 2950 50  0001 C CNN
-F 1 "GND" H 1000 3050 50  0000 C CNN
-F 2 "" H 1000 3200 50  0001 C CNN
-F 3 "" H 1000 3200 50  0001 C CNN
-	1    1000 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR02
-U 1 1 5A757A08
-P 1500 6300
-F 0 "#PWR02" H 1500 6050 50  0001 C CNN
-F 1 "GND" H 1500 6150 50  0000 C CNN
-F 2 "" H 1500 6300 50  0001 C CNN
-F 3 "" H 1500 6300 50  0001 C CNN
-	1    1500 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
 U 1 1 5A75832C
-P 1350 1300
-F 0 "#PWR03" H 1350 1050 50  0001 C CNN
-F 1 "GND" H 1350 1150 50  0000 C CNN
-F 2 "" H 1350 1300 50  0001 C CNN
-F 3 "" H 1350 1300 50  0001 C CNN
-	1    1350 1300
+P 1600 1300
+F 0 "#PWR01" H 1600 1050 50  0001 C CNN
+F 1 "GND" H 1600 1150 50  0000 C CNN
+F 2 "" H 1600 1300 50  0001 C CNN
+F 3 "" H 1600 1300 50  0001 C CNN
+	1    1600 1300
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 8550 4450 1300 750 
+S 7400 4450 1300 750 
 U 5A75C684
 F0 "Current Sensor" 60
 F1 "PLEC_currentSensor.sch" 60
-F2 "VCC" I L 8550 4550 60 
-F3 "Output" O R 9850 4550 60 
-F4 "CurrentIn" I L 8550 4750 60 
-F5 "VEE" O R 9850 5100 60 
-F6 "CurrentOut" O L 8550 4850 60 
-F7 "Calibrate" I L 8550 5100 60 
+F2 "VCC" I L 7400 4550 60 
+F3 "Output" O R 8700 4550 60 
+F4 "CurrentIn" I L 7400 4750 60 
+F5 "VEE" O R 8700 5100 60 
+F6 "CurrentOut" O L 7400 4850 60 
+F7 "Calibrate" I L 7400 5100 60 
 $EndSheet
 $Comp
-L GND #PWR04
+L GND #PWR02
 U 1 1 5A75FED0
-P 9950 5100
-F 0 "#PWR04" H 9950 4850 50  0001 C CNN
-F 1 "GND" H 9950 4950 50  0000 C CNN
-F 2 "" H 9950 5100 50  0001 C CNN
-F 3 "" H 9950 5100 50  0001 C CNN
-	1    9950 5100
+P 8800 5100
+F 0 "#PWR02" H 8800 4850 50  0001 C CNN
+F 1 "GND" H 8800 4950 50  0000 C CNN
+F 2 "" H 8800 5100 50  0001 C CNN
+F 3 "" H 8800 5100 50  0001 C CNN
+	1    8800 5100
 	1    0    0    -1  
 $EndComp
-Text GLabel 8550 4550 0    60   Input ~ 0
-V_5
-Text GLabel 9850 4550 2    60   Output ~ 0
+Text GLabel 8700 4550 2    60   Output ~ 0
 CurrentData_5V
-Text GLabel 1600 6050 0    60   Input ~ 0
+Text GLabel 3350 5200 0    60   Input ~ 0
 SWITCH_RETURN
-Text GLabel 2650 6050 2    60   Output ~ 0
-ARMED_3V
-Text GLabel 8550 3050 0    60   Input ~ 0
-RELAY_2_DRAIN
-Text GLabel 8550 2950 0    60   Input ~ 0
-RELAY_1_DRAIN
-Text GLabel 8550 3150 0    60   Input ~ 0
-RELAY_3_DRAIN
-Text GLabel 8550 3250 0    60   Input ~ 0
-RELAY_4_DRAIN
-Text GLabel 8550 3350 0    60   Input ~ 0
-RELAY_5_DRAIN
-Text GLabel 8550 3550 0    60   Input ~ 0
-RLY_12_SHNT_SRC
-Text GLabel 8550 3650 0    60   Input ~ 0
-RLY_3_SHNT_SRC
-Text GLabel 8550 3750 0    60   Input ~ 0
-RLY_45_SHNT_SRC
-Wire Wire Line
-	1150 1200 1650 1200
-Wire Wire Line
-	1150 1100 1650 1100
-Wire Wire Line
-	1000 3200 1100 3200
-Wire Wire Line
-	1500 6300 1600 6300
-Connection ~ 1350 1200
-Wire Wire Line
-	1350 1300 1350 1200
-Wire Wire Line
-	8550 4050 8250 4050
-Wire Wire Line
-	9850 5100 9950 5100
-Wire Wire Line
-	8250 4050 8250 4750
-Wire Wire Line
-	8250 4750 8550 4750
 $Comp
-L GND #PWR05
+L GND #PWR03
 U 1 1 5A744B39
-P 8450 4850
-F 0 "#PWR05" H 8450 4600 50  0001 C CNN
-F 1 "GND" H 8450 4700 50  0000 C CNN
-F 2 "" H 8450 4850 50  0001 C CNN
-F 3 "" H 8450 4850 50  0001 C CNN
-	1    8450 4850
+P 7300 4850
+F 0 "#PWR03" H 7300 4600 50  0001 C CNN
+F 1 "GND" H 7300 4700 50  0000 C CNN
+F 2 "" H 7300 4850 50  0001 C CNN
+F 3 "" H 7300 4850 50  0001 C CNN
+	1    7300 4850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 4850 8450 4850
-Text GLabel 1600 6150 0    60   Input ~ 0
+Text GLabel 3350 5300 0    60   Input ~ 0
 CurrentData_5V
-Text GLabel 2650 6150 2    60   Output ~ 0
-CurrentData_2.5V
-Text GLabel 8550 5100 0    60   Input ~ 0
-CURR_REF
 $Sheet
-S 9750 1550 1000 500 
+S 8400 1500 1000 500 
 U 5A751D08
 F0 "LED Control" 60
 F1 "PLEC_blinker.sch" 60
-F2 "VEE" O R 10750 1950 60 
-F3 "VCC" I L 9750 1650 60 
-F4 "Gate" I L 9750 1950 60 
-F5 "SwtichedGround" I L 9750 1800 60 
+F2 "VCC" I L 8400 1600 60 
+F3 "Gate" I L 8400 1900 60 
+F4 "SwtichedGround" I L 8400 1750 60 
 $EndSheet
-$Comp
-L GND #PWR06
-U 1 1 5A757388
-P 10850 1950
-F 0 "#PWR06" H 10850 1700 50  0001 C CNN
-F 1 "GND" H 10850 1800 50  0000 C CNN
-F 2 "" H 10850 1950 50  0001 C CNN
-F 3 "" H 10850 1950 50  0001 C CNN
-	1    10850 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10750 1950 10850 1950
-Text GLabel 9750 1950 0    60   Input ~ 0
-LED_CONTROL
 $Comp
 L Conn_01x02 J2
 U 1 1 5A759C02
-P 9750 5550
-F 0 "J2" H 9750 5650 50  0000 C CNN
-F 1 "Conn_01x02" H 9750 5350 50  0000 C CNN
-F 2 "PLEC:THT_TerminalBlock_2.5mm_2pos" H 9750 5550 50  0001 C CNN
-F 3 "" H 9750 5550 50  0001 C CNN
-	1    9750 5550
+P 9600 5700
+F 0 "J2" H 9600 5800 50  0000 C CNN
+F 1 "Conn_01x02" H 9600 5500 50  0000 C CNN
+F 2 "PLEC:THT_TerminalBlock_2.5mm_2pos" H 9600 5700 50  0001 C CNN
+F 3 "" H 9600 5700 50  0001 C CNN
+	1    9600 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR04
 U 1 1 5A759FAD
-P 8550 6050
-F 0 "#PWR07" H 8550 5800 50  0001 C CNN
-F 1 "GND" H 8550 5900 50  0000 C CNN
-F 2 "" H 8550 6050 50  0001 C CNN
-F 3 "" H 8550 6050 50  0001 C CNN
-	1    8550 6050
+P 7350 6200
+F 0 "#PWR04" H 7350 5950 50  0001 C CNN
+F 1 "GND" H 7350 6050 50  0000 C CNN
+F 2 "" H 7350 6200 50  0001 C CNN
+F 3 "" H 7350 6200 50  0001 C CNN
+	1    7350 6200
 	-1   0    0    -1  
 $EndComp
-Text GLabel 8050 5550 0    60   Input ~ 0
-ROVER_RELAY
 $Sheet
-S 1100 2100 1400 1200
+S 2900 2250 1400 1200
 U 5A71BFC6
 F0 "RF Module" 60
 F1 "PLEC_xbee.sch" 60
-F2 "VCC_33" I L 1100 2200 60 
-F3 "UART_TX" O R 2500 2200 60 
-F4 "UART_RX" I R 2500 2300 60 
-F5 "SPI_TX" O R 2500 3000 60 
-F6 "SPI_RX" I R 2500 3100 60 
-F7 "SPI_SS" I R 2500 3200 60 
-F8 "SPI_CLK" I R 2500 2900 60 
-F9 "VEE" O L 1100 3200 60 
-F10 "~RESET" I L 1100 3050 60 
-F11 "SLEEP_RQ_~DTR" I L 1100 2900 60 
-F12 "~UART_CTS" O R 2500 2400 60 
-F13 "~UART_RTS" I R 2500 2500 60 
-F14 "~SPI_INT~_~UART_INT" O R 2500 2700 60 
+F2 "VCC_33" I L 2900 2350 60 
+F3 "UART_TX" O R 4300 2350 60 
+F4 "UART_RX" I R 4300 2450 60 
+F5 "SPI_TX" O R 4300 3150 60 
+F6 "SPI_RX" I R 4300 3250 60 
+F7 "SPI_SS" I R 4300 3350 60 
+F8 "SPI_CLK" I R 4300 3050 60 
+F9 "~RESET" I L 2900 3200 60 
+F10 "SLEEP_RQ_~DTR" I L 2900 3050 60 
+F11 "~UART_CTS" O R 4300 2550 60 
+F12 "~UART_RTS" I R 4300 2650 60 
+F13 "~SPI_INT~_~UART_INT" O R 4300 2850 60 
 $EndSheet
 $Sheet
-S 1400 6800 1300 350 
+S 3100 5900 1300 350 
 U 5A76BB86
 F0 "Pressure Transducer" 60
 F1 "PLEC_pressureXdr.sch" 60
-F2 "VCC" I L 1400 6900 60 
-F3 "VEE" O L 1400 7050 60 
-F4 "V_OUT-" O R 2700 7050 60 
-F5 "V_OUT+" O R 2700 6900 60 
+F2 "VCC" I L 3100 6000 60 
+F3 "V_OUT-" O R 4400 6150 60 
+F4 "V_OUT+" O R 4400 6000 60 
 $EndSheet
-Text GLabel 1400 6900 0    60   Input ~ 0
-V_5
-$Comp
-L GND #PWR08
-U 1 1 5A76D5B2
-P 1300 7050
-F 0 "#PWR08" H 1300 6800 50  0001 C CNN
-F 1 "GND" H 1300 6900 50  0000 C CNN
-F 2 "" H 1300 7050 50  0001 C CNN
-F 3 "" H 1300 7050 50  0001 C CNN
-	1    1300 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 7050 1400 7050
-Text GLabel 2700 6900 2    60   Output ~ 0
-PRESSURE+
-Text GLabel 2700 7050 2    60   Output ~ 0
-PRESSURE-
-Wire Wire Line
-	8000 2800 8550 2800
-Wire Wire Line
-	8000 900  8000 2800
-Text Label 8000 1050 2    60   ~ 0
-SWITCHED_9V
-Wire Wire Line
-	8100 1000 8100 1800
-Wire Wire Line
-	8100 1800 9750 1800
-Text Label 8150 1800 0    60   ~ 0
+Text Label 6850 1350 2    60   ~ 0
+SWITCHED_VBAT
+Text Label 7400 1750 0    60   ~ 0
 LED_CATHODE
-Text GLabel 10150 2350 2    60   Output ~ 0
+Text GLabel 7400 2450 2    60   Output ~ 0
 SWITCH_RETURN
-Wire Wire Line
-	10150 2350 8000 2350
-Connection ~ 8000 2350
-Wire Wire Line
-	1100 3050 800  3050
-Wire Wire Line
-	800  3050 800  3550
-Wire Wire Line
-	800  3550 2600 3550
-Wire Wire Line
-	1100 2900 650  2900
-Wire Wire Line
-	650  2900 650  3700
-Wire Wire Line
-	650  3700 2600 3700
 $Sheet
-S 4800 2050 1400 3200
+S 4800 2050 1400 4350
 U 5A7803D4
 F0 "Microcontroller" 60
 F1 "PLEC_teensy36.sch" 60
@@ -535,253 +306,76 @@ F9 "SPI_MOSI" O L 4800 3250 60
 F10 "SPI_SS" O L 4800 3350 60 
 F11 "RF_~RESET" O L 4800 3550 60 
 F12 "RF_~SLEEP" O L 4800 3650 60 
-F13 "A0" I L 4800 3850 60 
-F14 "A1" I L 4800 3950 60 
-F15 "A2" I L 4800 4050 60 
-F16 "A3" I L 4800 4150 60 
-F17 "A4" I L 4800 4250 60 
-F18 "A5" I L 4800 4350 60 
-F19 "A6" I L 4800 4450 60 
-F20 "A7" I L 4800 4550 60 
-F21 "A8" I L 4800 4650 60 
-F22 "A9" I L 4800 4750 60 
-F23 "A10" I L 4800 4850 60 
-F24 "A11" I L 4800 4950 60 
-F25 "A12" I L 4800 5050 60 
+F13 "A0" I L 4800 4150 60 
+F14 "A1" I L 4800 4250 60 
+F15 "A2" I L 4800 4350 60 
+F16 "A3" I L 4800 4450 60 
+F17 "A4" I L 4800 4550 60 
+F18 "A5" I L 4800 4650 60 
+F19 "A6" I L 4800 4750 60 
+F20 "A7" I L 4800 4850 60 
+F21 "A8" I L 4800 4950 60 
+F22 "A9" I L 4800 5050 60 
+F23 "A10" I L 4800 5300 60 
+F24 "A11" I L 4800 5400 60 
+F25 "A12" I L 4800 6000 60 
 F26 "VCC" I L 4800 2150 60 
-F27 "A13" I L 4800 5150 60 
-F28 "D0" O R 6200 2200 60 
-F29 "D1" O R 6200 2400 60 
-F30 "D2" O R 6200 2500 60 
-F31 "D3" O R 6200 2600 60 
-F32 "D4" O R 6200 2700 60 
-F33 "D5" O R 6200 2800 60 
-F34 "D6" O R 6200 3000 60 
-F35 "D7" O R 6200 3100 60 
-F36 "D8" O R 6200 3200 60 
-F37 "DAC0" O R 6200 3600 60 
-F38 "D9" O R 6200 3400 60 
-F39 "VEE" O R 6200 5150 60 
+F27 "A13" I L 4800 6150 60 
+F28 "D0" O R 6200 2300 60 
+F29 "D1" O R 6200 2950 60 
+F30 "D2" O R 6200 3050 60 
+F31 "D3" O R 6200 3150 60 
+F32 "D4" O R 6200 3250 60 
+F33 "D5" O R 6200 3350 60 
+F34 "D6" O R 6200 3550 60 
+F35 "D7" O R 6200 3650 60 
+F36 "D8" O R 6200 3750 60 
+F37 "DAC0" O R 6200 5100 60 
+F38 "D9" O R 6200 5700 60 
 $EndSheet
-Text GLabel 4800 2350 0    60   Input ~ 0
-UART_TIXO
-Text GLabel 4800 2550 0    60   Input ~ 0
-UART_~CTS
-Text GLabel 4800 2850 0    60   Input ~ 0
-XB_~INTERRUPT
-Text GLabel 4800 3150 0    60   Input ~ 0
-SPI_MISO
-Text GLabel 4800 3650 0    60   Output ~ 0
-XB_~SLP
-Text GLabel 4800 3550 0    60   Output ~ 0
-XB_~RST
-Text GLabel 4800 3350 0    60   Output ~ 0
-SPI_SS
-Text GLabel 4800 3250 0    60   Output ~ 0
-SPI_MOSI
-Text GLabel 4800 3050 0    60   Output ~ 0
-SPI_CLK
-Text GLabel 4800 2650 0    60   Output ~ 0
-UART_~RTS
-Text GLabel 4800 2450 0    60   Output ~ 0
-UART_TOXI
-Text GLabel 4800 2150 0    60   Input ~ 0
-V_5
-Text GLabel 4800 3850 0    60   Input ~ 0
-EM_R1_VD+
-Text GLabel 4800 3950 0    60   Input ~ 0
-EM_R1_VD-
-Text GLabel 4800 4050 0    60   Input ~ 0
-EM_R2_VD+
-Text GLabel 4800 4150 0    60   Input ~ 0
-EM_R2_VD-
-Text GLabel 4800 4250 0    60   Input ~ 0
-EM_R3_VD+
-Text GLabel 4800 4350 0    60   Input ~ 0
-EM_R3_VD-
-Text GLabel 4800 4450 0    60   Input ~ 0
-EM_E1_VD+
-Text GLabel 4800 4550 0    60   Input ~ 0
-EM_E1_VD-
-Text GLabel 4800 4650 0    60   Input ~ 0
-EM_E2_VD+
-Text GLabel 4800 4750 0    60   Input ~ 0
-EM_E2_VD-
-Text GLabel 4800 4850 0    60   Input ~ 0
-ARMED_3V
-Text GLabel 4800 4950 0    60   Input ~ 0
-CurrentData_2.5V
-Text GLabel 4800 5050 0    60   Input ~ 0
-PRESSURE+
-Text GLabel 4800 5150 0    60   Input ~ 0
-PRESSURE-
-Text GLabel 6200 2200 2    60   Output ~ 0
-LED_CONTROL
-Text GLabel 6200 2500 2    60   Output ~ 0
-RELAY_2_DRAIN
-Text GLabel 6200 2400 2    60   Output ~ 0
-RELAY_1_DRAIN
-Text GLabel 6200 2600 2    60   Output ~ 0
-RELAY_3_DRAIN
-Text GLabel 6200 2700 2    60   Output ~ 0
-RELAY_4_DRAIN
-Text GLabel 6200 2800 2    60   Output ~ 0
-RELAY_5_DRAIN
-Text GLabel 6200 3000 2    60   Output ~ 0
-RLY_12_SHNT_SRC
-Text GLabel 6200 3100 2    60   Output ~ 0
-RLY_3_SHNT_SRC
-Text GLabel 6200 3200 2    60   Output ~ 0
-RLY_45_SHNT_SRC
-Text GLabel 6200 3600 2    60   Output ~ 0
-CURR_REF
-Text GLabel 6200 3400 2    60   Output ~ 0
-ROVER_RELAY
-$Comp
-L GND #PWR09
-U 1 1 5A76F1F2
-P 9700 4050
-F 0 "#PWR09" H 9700 3800 50  0001 C CNN
-F 1 "GND" H 9700 3900 50  0000 C CNN
-F 2 "" H 9700 4050 50  0001 C CNN
-F 3 "" H 9700 4050 50  0001 C CNN
-	1    9700 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9600 4050 9700 4050
 $Comp
 L Ferrite_Bead_Small L1
 U 1 1 5A7BB95D
-P 8450 800
-F 0 "L1" H 8525 850 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 8525 750 50  0000 L CNN
-F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 8380 800 50  0001 C CNN
-F 3 "" H 8450 800 50  0001 C CNN
-	1    8450 800 
-	0    1    1    0   
+P 7000 1100
+F 0 "L1" V 7075 1150 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" V 7075 1050 50  0000 R CNN
+F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 6930 1100 50  0001 L CNN
+F 3 "" H 7000 1100 50  0001 C CNN
+	1    7000 1100
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Ferrite_Bead_Small L3
-U 1 1 5A7BBC70
-P 8700 900
-F 0 "L3" H 8775 950 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 8775 850 50  0000 L CNN
-F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 8630 900 50  0001 C CNN
-F 3 "" H 8700 900 50  0001 C CNN
-	1    8700 900 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8350 800  7800 800 
-Wire Wire Line
-	8600 900  8000 900 
-Wire Wire Line
-	8800 900  10700 900 
-Wire Wire Line
-	8550 800  10700 800 
-Wire Wire Line
-	8100 1000 10700 1000
 $Comp
 L C C1
 U 1 1 5A7CFDC2
-P 9000 5800
-F 0 "C1" H 9025 5900 50  0000 L CNN
-F 1 "4700p" H 9025 5700 50  0000 L CNN
-F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 9038 5650 50  0001 C CNN
-F 3 "" H 9000 5800 50  0001 C CNN
-	1    9000 5800
+P 8400 5950
+F 0 "C1" H 8425 6050 50  0000 L CNN
+F 1 "4700p" H 8425 5850 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 8438 5800 50  0001 C CNN
+F 3 "" H 8400 5950 50  0001 C CNN
+	1    8400 5950
 	1    0    0    -1  
 $EndComp
-Connection ~ 9000 5550
-$Comp
-L Ferrite_Bead_Small L2
-U 1 1 5A7D52A5
-P 8300 5550
-F 0 "L2" H 8375 5600 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 8375 5500 50  0000 L CNN
-F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 8230 5550 50  0001 C CNN
-F 3 "" H 8300 5550 50  0001 C CNN
-	1    8300 5550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8400 5550 9550 5550
-$Comp
-L Ferrite_Bead_Small L5
-U 1 1 5A7DA73C
-P 8800 6050
-F 0 "L5" H 8875 6100 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 8875 6000 50  0000 L CNN
-F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 8730 6050 50  0001 C CNN
-F 3 "" H 8800 6050 50  0001 C CNN
-	1    8800 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8700 6050 8550 6050
-Wire Wire Line
-	8050 5550 8200 5550
-Wire Wire Line
-	9000 5650 9000 5550
-Text Label 1200 1100 0    60   ~ 0
-V_Bat
-Text Label 9550 800  0    60   ~ 0
-V9_Out
-Text Label 9550 900  0    60   ~ 0
+Text Label 1300 1100 0    60   ~ 0
+V_BAT
+Text Label 8400 1100 0    60   ~ 0
+VBAT_OUT
+Text Label 8400 1200 0    60   ~ 0
 SW_IN
-Wire Wire Line
-	9750 1650 9300 1650
-Wire Wire Line
-	9300 1650 9300 900 
-Connection ~ 9300 900 
-Wire Wire Line
-	9550 5650 9400 5650
-Wire Wire Line
-	9400 5650 9400 6050
-Wire Wire Line
-	9400 6050 8900 6050
-Wire Wire Line
-	9000 5950 9000 6050
-Connection ~ 9000 6050
-$Comp
-L GND #PWR010
-U 1 1 5A7FC17E
-P 6300 5150
-F 0 "#PWR010" H 6300 4900 50  0001 C CNN
-F 1 "GND" H 6300 5000 50  0000 C CNN
-F 2 "" H 6300 5150 50  0001 C CNN
-F 3 "" H 6300 5150 50  0001 C CNN
-	1    6300 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 5150 6300 5150
 $Comp
 L C C29
 U 1 1 5A7FF5F3
-P 10550 1200
-F 0 "C29" H 10575 1300 50  0000 L CNN
-F 1 "4700p" H 10575 1100 50  0000 L CNN
-F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 10588 1050 50  0001 C CNN
-F 3 "" H 10550 1200 50  0001 C CNN
-	1    10550 1200
+P 9950 1500
+F 0 "C29" H 9975 1600 50  0000 L CNN
+F 1 "4700p" H 9975 1400 50  0000 L CNN
+F 2 "PLEC:THTt_100Px150Lx100Wx183H_4700p" H 9988 1350 50  0001 C CNN
+F 3 "" H 9950 1500 50  0001 C CNN
+	1    9950 1500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	10200 900  10200 1400
-Connection ~ 10200 900 
-Wire Wire Line
-	10550 800  10550 1050
-Connection ~ 10550 800 
-Wire Wire Line
-	10550 1350 10550 1400
-Wire Wire Line
-	10550 1400 10200 1400
 Text Notes 7400 7500 0    60   ~ 0
 Payload Ejection Controller Top View
 $Bitmap
-Pos 6050 6850
+Pos 1400 6900
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 09 00 00 02 09 08 02 00 00 00 A0 00 39 
@@ -2504,4 +2098,314 @@ E0 1B 00 00 00 00 12 F0 0D 00 00 00 00 C9 FF 03 42 07 DB EC 24 A7 89 B8 00 00 00
 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes 550  750  0    60   ~ 12
+Minimum Voltage: 7.2V with Maximum Internal Resistance of 4 Ohms\nDo not exceed 24V
+Text Notes 11050 1100 2    60   ~ 0
+Maximum wire length between pins 1 and 2 (5% loss):\n20 AWG: 3ft\n18 AWG: 4ft\n16 AWG: 6ft\n16 AWG: 8ft\n
+$Comp
+L Ferrite_Bead_Small L4
+U 1 1 5A86B166
+P 7350 1200
+F 0 "L4" V 7425 1250 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" V 7425 1150 50  0000 R CNN
+F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 7280 1200 50  0001 L CNN
+F 3 "" H 7350 1200 50  0001 C CNN
+	1    7350 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Ferrite_Bead_Small L2
+U 1 1 5A86EE35
+P 7550 5700
+F 0 "L2" V 7625 5750 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" V 7625 5650 50  0000 R CNN
+F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 7480 5700 50  0001 L CNN
+F 3 "" H 7550 5700 50  0001 C CNN
+	1    7550 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Ferrite_Bead_Small L5
+U 1 1 5A8713B9
+P 7550 6200
+F 0 "L5" V 7625 6250 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" V 7625 6150 50  0000 R CNN
+F 2 "Inductors_THT:L_Axial_L7.0mm_D3.3mm_P5.08mm_Vertical_Fastron_MICC" V 7480 6200 50  0001 L CNN
+F 3 "" H 7550 6200 50  0001 C CNN
+	1    7550 6200
+	0    -1   -1   0   
+$EndComp
+Text Notes 1950 4650 0    60   ~ 0
+Voltage Dividers\nMonitoring J3 & J4\n
+Text Notes 1850 5600 0    60   ~ 0
+Battery Level/Arming Feedback\nCurrent Sensor Output
+Text Notes 9350 6350 0    60   ~ 0
+To PB1167 on rover PCB\nTo coil of relay\nNC held open to prevent power-on\nDiode to allow coil to discharge
+$Comp
+L D D2
+U 1 1 5A81D762
+P 8950 5950
+F 0 "D2" H 8950 6050 50  0000 C CNN
+F 1 "1N4001" H 8950 5850 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_KathodeUp" H 8950 5950 50  0001 C CNN
+F 3 "" H 8950 5950 50  0001 C CNN
+	1    8950 5950
+	0    1    1    0   
+$EndComp
+$Sheet
+S 7400 2700 1050 1450
+U 5A746317
+F0 "Relays" 60
+F1 "PLEC_relays.sch" 60
+F2 "VDD" I L 7400 2800 60 
+F3 "R1D_IN" I L 7400 2950 60 
+F4 "R2D_IN" I L 7400 3050 60 
+F5 "R3D_IN" I L 7400 3150 60 
+F6 "R4D_IN" I L 7400 3250 60 
+F7 "R5D_IN" I L 7400 3350 60 
+F8 "R12S_IN" I L 7400 3550 60 
+F9 "R3S_IN" I L 7400 3650 60 
+F10 "R45S_IN" I L 7400 3750 60 
+F11 "GND_SENSED" O L 7400 4050 60 
+F12 "R1_IN" I R 8450 2900 60 
+F13 "R1_OUT" O R 8450 2800 60 
+F14 "R2_IN" I R 8450 3100 60 
+F15 "R2_OUT" O R 8450 3000 60 
+F16 "R3_IN" I R 8450 3300 60 
+F17 "R3_OUT" O R 8450 3200 60 
+F18 "R4_IN" I R 8450 3750 60 
+F19 "R4_OUT" O R 8450 3650 60 
+F20 "R5_IN" I R 8450 3950 60 
+F21 "R5_OUT" O R 8450 3850 60 
+$EndSheet
+$Comp
+L R R40
+U 1 1 5A832074
+P 4550 3050
+F 0 "R40" V 4630 3050 50  0000 C CNN
+F 1 "33" V 4550 3050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4480 3050 50  0001 C CNN
+F 3 "" H 4550 3050 50  0001 C CNN
+	1    4550 3050
+	0    -1   -1   0   
+$EndComp
+Text Label 7200 4550 0    60   ~ 0
+V_5
+Text Label 4600 2150 0    60   ~ 0
+V_5
+Text Label 2900 1250 2    60   ~ 0
+V_5
+Wire Wire Line
+	1200 1200 1600 1200
+Wire Wire Line
+	1200 1100 1700 1100
+Wire Wire Line
+	1600 1200 1600 1300
+Wire Wire Line
+	7400 4050 6850 4050
+Wire Wire Line
+	8700 5100 8800 5100
+Wire Wire Line
+	6850 4050 6850 4750
+Wire Wire Line
+	6850 4750 7400 4750
+Wire Wire Line
+	7400 4850 7300 4850
+Wire Wire Line
+	6850 2800 7400 2800
+Wire Wire Line
+	6850 1200 6850 2800
+Wire Wire Line
+	7250 1300 7250 1750
+Wire Wire Line
+	7250 1750 8400 1750
+Wire Wire Line
+	7400 2450 6850 2450
+Connection ~ 6850 2450
+Wire Wire Line
+	2900 3200 2800 3200
+Wire Wire Line
+	2800 3200 2800 3550
+Wire Wire Line
+	2800 3550 4800 3550
+Wire Wire Line
+	2900 3050 2700 3050
+Wire Wire Line
+	2700 3050 2700 3650
+Wire Wire Line
+	2700 3650 4800 3650
+Wire Wire Line
+	2800 1100 6900 1100
+Wire Wire Line
+	7250 1200 6850 1200
+Wire Wire Line
+	7450 1200 10150 1200
+Wire Wire Line
+	7100 1100 10150 1100
+Wire Wire Line
+	7250 1300 10150 1300
+Connection ~ 8400 5700
+Wire Wire Line
+	7650 5700 9400 5700
+Wire Wire Line
+	7450 6200 7350 6200
+Wire Wire Line
+	6200 5700 7450 5700
+Wire Wire Line
+	8400 5800 8400 5700
+Wire Wire Line
+	8400 1600 7900 1600
+Wire Wire Line
+	7900 1600 7900 1200
+Connection ~ 7900 1200
+Wire Wire Line
+	9400 5800 9250 5800
+Wire Wire Line
+	9250 5800 9250 6200
+Wire Wire Line
+	9250 6200 7650 6200
+Wire Wire Line
+	8400 6100 8400 6200
+Connection ~ 8400 6200
+Wire Wire Line
+	9600 1200 9600 1700
+Connection ~ 9600 1200
+Wire Wire Line
+	9950 1100 9950 1350
+Connection ~ 9950 1100
+Wire Wire Line
+	9950 1650 9950 1700
+Wire Wire Line
+	9950 1700 9600 1700
+Wire Wire Line
+	2700 1250 2900 1250
+Wire Wire Line
+	4400 6000 4800 6000
+Wire Wire Line
+	4400 6150 4800 6150
+Wire Wire Line
+	4400 5400 4800 5400
+Wire Wire Line
+	4400 5050 4800 5050
+Wire Wire Line
+	4400 4950 4800 4950
+Wire Wire Line
+	4400 4850 4800 4850
+Wire Wire Line
+	4400 4750 4800 4750
+Wire Wire Line
+	4400 4650 4800 4650
+Wire Wire Line
+	4400 4550 4800 4550
+Wire Wire Line
+	4400 4450 4800 4450
+Wire Wire Line
+	4400 4350 4800 4350
+Wire Wire Line
+	4400 4250 4800 4250
+Wire Wire Line
+	4400 4150 4800 4150
+Wire Wire Line
+	6200 2950 7400 2950
+Wire Wire Line
+	6200 3050 7400 3050
+Wire Wire Line
+	6200 3150 7400 3150
+Wire Wire Line
+	6200 3250 7400 3250
+Wire Wire Line
+	6200 3350 7400 3350
+Wire Wire Line
+	6200 3550 7400 3550
+Wire Wire Line
+	6200 3650 7400 3650
+Wire Wire Line
+	6200 3750 7400 3750
+Wire Wire Line
+	6200 5100 7400 5100
+Wire Wire Line
+	8450 2800 9350 2800
+Wire Wire Line
+	8450 2900 9350 2900
+Wire Wire Line
+	8450 3000 9350 3000
+Wire Wire Line
+	8450 3100 9350 3100
+Wire Wire Line
+	8450 3200 9350 3200
+Wire Wire Line
+	8450 3300 9350 3300
+Wire Wire Line
+	8450 3950 9350 3950
+Wire Wire Line
+	8450 3850 9350 3850
+Wire Wire Line
+	8450 3750 9350 3750
+Wire Wire Line
+	8450 3650 9350 3650
+Wire Wire Line
+	4800 2350 4300 2350
+Wire Wire Line
+	4800 2450 4300 2450
+Wire Wire Line
+	4800 2550 4300 2550
+Wire Wire Line
+	4800 2650 4300 2650
+Wire Wire Line
+	4800 2850 4300 2850
+Wire Wire Line
+	4800 3150 4300 3150
+Wire Wire Line
+	4800 3250 4300 3250
+Wire Wire Line
+	4800 3350 4300 3350
+Connection ~ 9000 2800
+Connection ~ 9000 2900
+Connection ~ 9000 3000
+Connection ~ 9000 3100
+Connection ~ 9000 3200
+Connection ~ 9000 3300
+Connection ~ 9000 3650
+Connection ~ 9000 3750
+Connection ~ 9000 3850
+Connection ~ 9000 3950
+Wire Wire Line
+	2700 1400 2800 1400
+Wire Wire Line
+	2800 1400 2800 2350
+Wire Wire Line
+	2800 2350 2900 2350
+Wire Wire Line
+	1600 1100 1600 850 
+Wire Wire Line
+	1600 850  2800 850 
+Wire Wire Line
+	2800 850  2800 1100
+Connection ~ 1600 1100
+Wire Wire Line
+	8950 5800 8950 5700
+Connection ~ 8950 5700
+Wire Wire Line
+	8950 6100 8950 6200
+Connection ~ 8950 6200
+Wire Wire Line
+	4800 3050 4700 3050
+Wire Wire Line
+	4400 3050 4300 3050
+Wire Wire Line
+	4400 5300 4800 5300
+Wire Wire Line
+	7400 4550 7200 4550
+Wire Wire Line
+	4800 2150 4600 2150
+Wire Wire Line
+	8400 1900 7250 1900
+Wire Wire Line
+	7250 1900 7250 2300
+Wire Wire Line
+	7250 2300 6200 2300
+Text Label 2900 6000 0    60   ~ 0
+V_5
+Wire Wire Line
+	3100 6000 2900 6000
 $EndSCHEMATC
