@@ -1,0 +1,9 @@
+(module Hole4-40 (layer F.Cu) (tedit 5A872A85)
+  (fp_text reference J7 (at 0 3.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Conn_01x01 (at 0 -3.25) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 5.08 5.08) (drill 3.2639) (layers *.Cu *.Mask))
+)
